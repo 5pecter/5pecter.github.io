@@ -1,0 +1,161 @@
+* {
+  transition: transform 0.5s ease-in-out;
+}
+
+.box {
+  background-color: transparent;
+  font-size: 160px;
+  font-weight: 100;
+  text-align: center;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.normalIBMPlex {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: normal;
+}
+
+.scroll {
+  overflow-x: hidden;
+  background-color: black !important;
+}
+
+/* .scroll-1::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+  animation: slidebar 5s infinite;
+}
+
+.scroll-1::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #888;
+  animation: slidebar 5s infinite;
+}
+
+@keyframes slidebar{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(0);
+  }
+  33%{
+    transform: translateX(100%);
+  }
+  58%{
+    transform: translateX(100%);
+  }
+  66%{
+    transform: translateX(200%);
+  }
+  91%{
+    background: #1a1d5a;
+  }
+  100%{
+    background: #888;
+  }
+} */
+.container {
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  padding: 12px;
+  padding-top: 6px;
+  width: 90vw;
+  height: 85vh;
+  position: absolute;
+  top: 115%;
+  left: 5%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  scroll-snap-type: x mandatory;
+  scroll-padding-top: 2px;
+  gap: 20px;
+  background-color: transparent;
+}
+
+.container .card {
+  flex: 0 0 30vw;
+  overflow: hidden;
+  background-color: #141414;
+  scroll-snap-align: start;
+}
+
+.card .card__image {
+  flex: 1;
+  height: 140px;
+}
+
+.card:nth-child(1) .card__image {
+  background: #edccb3;
+  background: linear-gradient(135deg, #edccb3, #f65146);
+}
+
+.card:nth-child(2) .card__image {
+  background: #05adde;
+  background: linear-gradient(135deg, #05adde, #1a1d5a);
+}
+
+.card:nth-child(3) .card__image {
+  background: #27569f;
+  background: linear-gradient(135deg, #8ed161, #0f6625);
+}
+
+.card:nth-child(4) .card__image {
+  background: black;
+}
+
+.card .card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.card .card__content .card__title {
+  font-size: 32px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.card .card__content .card__describe {
+  color: #fff;
+  font-size: 16px;
+}
+
+.card {
+  animation: slide 5s infinite;
+}
+
+/* @keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  58% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  91% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */

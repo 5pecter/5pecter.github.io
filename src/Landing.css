@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  scroll-behavior: smooth;
+  /* transition: all 0.5s ease-in-out; */
+  background-color: black;
+  /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+}
+
+.text-colour {
+  background-color: transparent;
+}
+
+.fullscreen-box {
+  width: 0vw !important;
+  height: 98.8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.text-name {
+  background-color: transparent;
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 4%;
+  left: 5%;
+  position: fixed;
+  font-weight: 900;
+  text-decoration: none;
+  transition: opacity 0.5s ease-in-out;
+  /* animation: name-shift 12s ease-in-out infinite; */
+}
+
+.text-name1 {
+  opacity: 1;
+}
+
+.text-name:hover .text-name1:hover {
+  animation: opacityLoop 1s infinite alternate;
+}
+
+/* @keyframes name-shift {
+  0% {
+    -webkit-transform:translate3d(-30px,0,0);
+    transform:translate3d(-30px,0,0)
+   }
+   25% {
+    -webkit-transform:translate3d(0,-30px,0);
+    transform:translate3d(0,-30px,0)
+   }
+   50% {
+    -webkit-transform:translate3d(0,-30px,0);
+    transform:translate3d(0,-30px,0)
+   }
+   75% {
+    -webkit-transform:translate3d(-30px,0,0);
+    transform:translate3d(-30px,0,0)
+   }
+   to {
+    -webkit-transform:translate3d(-30px,0,0);
+    transform:translate3d(-30px,0,0)
+   }
+  } */
+
+@keyframes opacityLoop {
+  from {
+    .text-name1 {
+      opacity: 0;
+    }
+  }
+  to {
+    .text-name1 {
+      opacity: 1;
+    }
+  }
+}
+
+.text-navbar {
+  font-size: 20px;
+}
+
+.About {
+  position: absolute;
+  background-color: transparent;
+  top: 6%;
+  right: 6%;
+  text-decoration: none;
+  color: white;
+  position: fixed;
+}
+
+/* .About:hover {
+  color: rgb(129, 81, 240);
+} */
+
+.Projects {
+  position: absolute;
+  background-color: transparent;
+  top: 6%;
+  right: 17.3%;
+  text-decoration: none;
+  color: white;
+  position: fixed;
+}
+
+/* .Projects:hover {
+  color: rgb(129, 81, 240);
+} */
+
+.Archive {
+  position: absolute;
+  background-color: transparent;
+  top: 6%;
+  right: 11%;
+  text-decoration: none;
+  color: white;
+  position: fixed;
+}
+
+/* .Archive:hover {
+  color: rgb(129, 81, 240);
+} */
+
+.overline {
+  text-decoration: overline;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.text-intro {
+  width: 50%;
+  background-color: transparent;
+  padding: 4%;
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 35%;
+  left: 28%;
+}
+
+/* <!-----animation circles 10s ease-in-out infinite-----> */
+
+@keyframes circles {
+  0% {
+    -webkit-transform: translate3d(0, -300px, 0px);
+    transform: translate3d(0, -300px, 0px);
+  }
+  25% {
+    -webkit-transform: translate3d(-300px, 0px, 0);
+    transform: translate3d(-300px, 0px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0px, 300px, 0);
+    transform: translate3d(0px, 300px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(300px, 0, 0);
+    transform: translate3d(300px, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0px, -300px, 0);
+    transform: translate3d(0px, -300px, 0);
+  }
+}
+
+.circle1 {
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  background: rgb(129, 81, 240);
+  filter: blur(200px);
+  animation: circles 10s ease-in-out infinite;
+}
+
+.circle2 {
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 16%;
+  background: rgb(105, 96, 235);
+  filter: blur(200px);
+  animation: circles 7s ease-in-out infinite;
+}
+
+.text-intro2,
+.text-intro3,
+.text-intro4,
+.text-intro5,
+.text-intro6,
+.text-intro7,
+.text-intro8,
+.text-intro9,
+.text-intro10,
+.text-intro11,
+.text-intro12,
+.text-intro13,
+.text-intro14,
+.text-intro15,
+.text-intro16,
+.text-intro17,
+.text-intro18,
+.text-intro19,
+.text-intro20,
+.text-intro21,
+.text-intro22,
+.text-intro23,
+.text-intro24,
+.text-intro25,
+.text-intro26,
+.text-intro27 {
+  position: relative;
+  left: 10%;
+  background-color: transparent;
+  opacity: 0.9;
+}
+
+.text-intro1 {
+  background: transparent;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  font-size: 150px;
+  color: white;
+}
+
+.glowing {
+  animation: glowAnimation 0.5s infinite alternate;
+}
+
+@keyframes glowAnimation {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* outline: 1px dashed white; */
+}
+
+.italic {
+  font-style: italic;
+}
